@@ -1,23 +1,59 @@
-#title  {
-color: aqua;
-background-color: black;
+#title {
+    color: black;
 }
 
 body {
     color: green;
-    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, rgb(176, 205, 224), rgb(76, 88, 103)) fixed;
 }
 
 li {
-    font-size: 36px;
-    margin-inline-start: -3%;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 15px auto; 
+    padding: 15px;
+    transition: background-color 0.3s;
+    max-width: 300px; 
+}
+
+/* Add colors for the meal text */
+li:nth-child(1) a {
+    color: #2a5d84; /* A shade of blue for Lasagna */
+}
+
+li:nth-child(2) a {
+    color: #e07a5f; /* A shade of coral for Pizza */
+}
+
+li:nth-child(3) a {
+    color: #6a994e; /* A shade of green for Pasta */
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
 }
 
 .spacer {
     margin-bottom: 10px;
+    height: 10px;
 }
 
 .center {
     text-align: center;
-    list-style-position: inside ;
+    list-style-position: inside;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+a:hover {
+    color: inherit;
 }
